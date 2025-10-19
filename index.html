@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educational Crossword Puzzle Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Educational Crossword Generator</h1>
+        <p>Create, play and share crossword puzzles for educational purposes</p>
+    </header>
+
+    <nav>
+        <button class="tab active" data-tab="create">Create</button>
+        <button class="tab" data-tab="play">Play</button>
+        <button class="tab" data-tab="database">Word Database</button>
+        <button class="tab" data-tab="settings">Settings</button>
+        <div style="position: fixed; bottom: 20px; right: 20px;">
+            <a href="/" style="display: flex; align-items: center; justify-content: center; width: 50px; height: 50px; background-color: var(--accent); color: #000; text-decoration: none; border-radius: 50%; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); transition: all 0.3s;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                    <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                </svg>
+            </a>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Create Tab -->
+        <div id="create" class="tab-content active">
+            <div class="controls">
+                <div class="controls-group">
+                    <button id="generate-crossword">Generate Crossword</button>
+                    <button id="clear-words" class="btn-secondary">Clear Words</button>
+                </div>
+                <div class="controls-group">
+                    <button id="export-crossword" class="btn-secondary">Export</button>
+                    <button id="import-crossword" class="btn-secondary">Import</button>
+                    <button id="print-crossword" class="btn-secondary">Print</button>
+                </div>
+            </div>
+
+            <div class="input-group">
+                <label for="puzzle-title">Puzzle Title</label>
+                <input type="text" id="puzzle-title" placeholder="Enter puzzle title">
+            </div>
+
+            <div class="word-input-container">
+                <div class="input-group" style="margin-bottom: 0;">
+                    <label for="word-input">Word</label>
+                    <input type="text" id="word-input" placeholder="Enter a word">
+                </div>
+                <div class="input-group" style="margin-bottom: 0; flex: 2;">
+                    <label for="clue-input">Clue</label>
+                    <input type="text" id="clue-input" placeholder="Enter a clue for the word">
+                </div>
+                <button id="add-word">Add Word</button>
+            </div>
+
+            <div class="table-container">
+                <h3 style="padding: 0.8rem;">Word List</h3>
+                <div class="words-list" id="words-list">
+                    <!-- Words will be added here -->
+                    <div class="word-item" style="color: var(--text-secondary); font-style: italic;">
+                        No words added yet. Add words above to start creating your crossword.
+                    </div>
+                </div>
+            </div>
+
+            <div class="crossword-container" id="crossword-preview-container" style="display: none;">
+                <div class="crossword-grid-container">
+                    <div class="print-header" style="display: none;">
+                        <h2 id="print-title">Crossword Puzzle</h2>
+                        <p id="print-description">Fill in the crossword puzzle based on the clues.</p>
+                    </div>
+                    <div class="crossword-grid" id="crossword-grid">
+                        <!-- Grid will be generated here -->
+                    </div>
+                </div>
+                <div class="clues-container">
+                    <div class="clues-section">
+                        <h3>Across</h3>
+                        <div id="across-clues">
+                            <!-- Across clues will be added here -->
+                        </div>
+                    </div>
+                    <div class="clues-section">
+                        <h3>Down</h3>
+                        <div id="down-clues">
+                            <!-- Down clues will be added here -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Play Tab -->
+        <div id="play" class="tab-content">
+            <div class="controls">
+                <div class="controls-group">
+                    <button id="new-game">New Puzzle</button>
+                    <button id="check-answers" class="btn-secondary">Check Answers</button>
+                    <button id="reveal-answer" class="btn-secondary">Reveal Answer</button>
+                    <button id="reset-puzzle" class="btn-secondary">Reset</button>
+                </div>
+                <div class="timer">
+                    <span class="timer-icon">⏱</span>
+                    <span id="timer-display">00:00</span>
+                </div>
+            </div>
+
+            <div class="input-group">
+                <label for="difficulty">Difficulty</label>
+                <select id="difficulty">
+                    <option value="easy">Easy (5-8 words)</option>
+                    <option value="medium" selected>Medium (9-12 words)</option>
+                    <option value="hard">Hard (13-20 words)</option>
+                </select>
+            </div>
+
+            <div class="crossword-container">
+                <div class="crossword-grid-container">
+                    <div class="print-header" style="display: none;">
+                        <h2 id="play-print-title">Crossword Puzzle</h2>
+                        <p id="play-print-description">Fill in the crossword puzzle based on the clues.</p>
+                    </div>
+                    <div class="crossword-grid" id="play-crossword-grid">
+                        <!-- Grid will be generated here -->
+                    </div>
+                </div>
+                <div class="clues-container">
+                    <div class="clues-section">
+                        <h3>Across</h3>
+                        <div id="play-across-clues">
+                            <!-- Across clues will be added here -->
+                        </div>
+                    </div>
+                    <div class="clues-section">
+                        <h3>Down</h3>
+                        <div id="play-down-clues">
+                            <!-- Down clues will be added here -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="game-message" class="message" style="display: none;"></div>
+        </div>
+
+        <!-- Database Tab -->
+        <div id="database" class="tab-content">
+            <div class="controls">
+                <div class="controls-group">
+                    <input type="text" id="search-database" placeholder="Search words or clues...">
+                    <button id="search-btn">Search</button>
+                </div>
+                <div class="controls-group">
+                    <button id="import-database" class="btn-secondary">Import</button>
+                    <button id="export-database" class="btn-secondary">Export</button>
+                    <button id="clear-database" class="btn-danger">Clear All</button>
+                </div>
+            </div>
+
+            <div class="word-input-container">
+                <div class="input-group" style="margin-bottom: 0;">
+                    <label for="db-word-input">Word</label>
+                    <input type="text" id="db-word-input" placeholder="Enter a word">
+                </div>
+                <div class="input-group" style="margin-bottom: 0; flex: 2;">
+                    <label for="db-clue-input">Clue</label>
+                    <input type="text" id="db-clue-input" placeholder="Enter a clue for the word">
+                </div>
+                <button id="db-add-word">Add to Database</button>
+            </div>
+
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Word</th>
+                            <th>Clue</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="database-table-body">
+                        <!-- Database entries will be added here -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Settings Tab -->
+        <div id="settings" class="tab-content">
+            <div class="settings-grid">
+                <div class="settings-card">
+                    <h3>Interface Settings</h3>
+                    
+                    <div class="switch-container">
+                        <div>
+                            <div>Show Timer</div>
+                            <div style="color: var(--text-secondary); font-size: 0.9rem;">Display a timer while playing</div>
+                        </div>
+                        <label class="switch">
+                            <input type="checkbox" id="show-timer-setting" checked>
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                    
+                    <div class="switch-container">
+                        <div>
+                            <div>Auto-check Answers</div>
+                            <div style="color: var(--text-secondary); font-size: 0.9rem;">Automatically check answers as you type</div>
+                        </div>
+                        <label class="switch">
+                            <input type="checkbox" id="auto-check-setting">
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                    
+                    <div class="switch-container">
+                        <div>
+                            <div>Highlight Current Word</div>
+                            <div style="color: var(--text-secondary); font-size: 0.9rem;">Highlight the word currently being solved</div>
+                        </div>
+                        <label class="switch">
+                            <input type="checkbox" id="highlight-word-setting" checked>
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                </div>
+                
+                <div class="settings-card">
+                    <h3>Puzzle Settings</h3>
+                    
+                    <div class="range-slider">
+                        <label for="grid-size-slider">Maximum Grid Size</label>
+                        <input type="range" id="grid-size-slider" min="10" max="25" value="15">
+                        <div class="range-value">15 x 15</div>
+                    </div>
+                    
+                    <div class="range-slider">
+                        <label for="max-words-slider">Maximum Words Per Puzzle</label>
+                        <input type="range" id="max-words-slider" min="5" max="30" value="20">
+                        <div class="range-value">20 words</div>
+                    </div>
+                    
+                    <div class="switch-container">
+                        <div>
+                            <div>Dense Puzzles</div>
+                            <div style="color: var(--text-secondary); font-size: 0.9rem;">Generate denser puzzle layouts with more word intersections</div>
+                        </div>
+                        <label class="switch">
+                            <input type="checkbox" id="dense-puzzles-setting">
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                </div>
+                
+                <div class="settings-card">
+                    <h3>Database Settings</h3>
+                    
+                    <div class="switch-container">
+                        <div>
+                            <div>Auto-save to Database</div>
+                            <div style="color: var(--text-secondary); font-size: 0.9rem;">Automatically add new words to the database</div>
+                        </div>
+                        <label class="switch">
+                            <input type="checkbox" id="auto-save-setting" checked>
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                    
+                    <div class="switch-container">
+                        <div>
+                            <div>Prevent Duplicates</div>
+                            <div style="color: var(--text-secondary); font-size: 0.9rem;">Prevent adding duplicate words to the database</div>
+                        </div>
+                        <label class="switch">
+                            <input type="checkbox" id="prevent-duplicates-setting" checked>
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                    
+                    <button id="backup-data" class="btn-secondary" style="margin-top: 1rem;">Backup All Data</button>
+                    <button id="restore-data" class="btn-secondary" style="margin-top: 0.5rem;">Restore From Backup</button>
+                </div>
+                
+                <div class="settings-card">
+                    <h3>About</h3>
+                    <p>Educational Crossword Puzzle Generator v1.0</p>
+                    <p style="margin-top: 0.5rem; color: var(--text-secondary);">A tool designed for educational purposes to create, solve, and share crossword puzzles.</p>
+                    <p style="margin-top: 1rem; color: var(--text-secondary);">All data is stored locally in your browser.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Educational Crossword Puzzle Generator &copy; 2025</p>
+    </footer>
+
+    <!-- Import/Export Modal -->
+    <div class="modal" id="import-export-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="modal-title">Export Crossword</h3>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div id="export-content">
+                    <p>Copy the text below to save your crossword puzzle:</p>
+                    <textarea id="export-text" rows="10" readonly></textarea>
+                    <button id="copy-export" style="margin-top: 1rem;">Copy to Clipboard</button>
+                </div>
+                <div id="import-content" style="display: none;">
+                    <p>Paste your saved crossword puzzle below:</p>
+                    <textarea id="import-text" rows="10"></textarea>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="close-modal-btn btn-secondary">Cancel</button>
+                <button id="confirm-import" style="display: none;">Import</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Loading Overlay -->
+    <div class="loading-overlay" id="loading-overlay">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast">
+        <div class="toast-icon">✓</div>
+        <div class="toast-message">Operation completed successfully</div>
+        <button class="toast-close">&times;</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

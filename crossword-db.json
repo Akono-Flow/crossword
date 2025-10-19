@@ -1,0 +1,681 @@
+{
+    "type": "database",
+    "words": [
+      {
+        "word": "JAVASCRIPT",
+        "clue": "Programming language commonly used for web development"
+      },
+      {
+        "word": "HTML",
+        "clue": "Markup language for creating web pages"
+      },
+      {
+        "word": "CSS",
+        "clue": "Used for styling web pages"
+      },
+      {
+        "word": "ALGORITHM",
+        "clue": "Step-by-step procedure for calculations"
+      },
+      {
+        "word": "DATABASE",
+        "clue": "Organized collection of data"
+      },
+      {
+        "word": "VARIABLE",
+        "clue": "Container for storing data values"
+      },
+      {
+        "word": "FUNCTION",
+        "clue": "Block of code designed to perform a particular task"
+      },
+      {
+        "word": "LOOP",
+        "clue": "Control structure that repeats a statement"
+      },
+      {
+        "word": "ARRAY",
+        "clue": "Collection of elements identified by index"
+      },
+      {
+        "word": "METHOD",
+        "clue": "Function that is a property of an object"
+      },
+      {
+        "word": "CLASS",
+        "clue": "Blueprint for creating objects"
+      },
+      {
+        "word": "INHERITANCE",
+        "clue": "Mechanism for code reuse in OOP"
+      },
+      {
+        "word": "INTERFACE",
+        "clue": "Point where two systems meet and interact"
+      },
+      {
+        "word": "API",
+        "clue": "Set of rules that allow programs to talk to each other"
+      },
+      {
+        "word": "OBJECT",
+        "clue": "Collection of properties"
+      },
+      {
+        "word": "TITRATION",
+        "clue": "Method used to determine concentration of unknown solution"
+      },
+      {
+        "word": "PIPETTE",
+        "clue": "Instrument used to deliver volume of analyte during volumetric analysis"
+      },
+      {
+        "word": "BURETTE",
+        "clue": "Instrument used to deliver volume of standard solution during volumetric analysis"
+      },
+      {
+        "word": "KSP",
+        "clue": "Constant for a sparingly soluble salt"
+      },
+      {
+        "word": "CONCENTRATION",
+        "clue": "Ratio of the moles to volume in a solution"
+      },
+      {
+        "word": "VECTOR",
+        "clue": "Quantity which has both magnitude and direction"
+      },
+      {
+        "word": "SCALAR",
+        "clue": "Quantity which has magnitude only"
+      },
+      {
+        "word": "ENERGY",
+        "clue": "The ability to do work"
+      },
+      {
+        "word": "POWER",
+        "clue": "Rate at which work is done"
+      },
+      {
+        "word": "CHARGE",
+        "clue": "Product of Current and time"
+      },
+      {
+        "word": "SOFA",
+        "clue": "Piece of furniture to sit on in the living room"
+      },
+      {
+        "word": "OVEN",
+        "clue": "Used to bake cakes"
+      },
+      {
+        "word": "LAMPSHADE",
+        "clue": "Covers a bulb and softens the light"
+      },
+      {
+        "word": "BROOM",
+        "clue": "Used to sweep the floor"
+      },
+      {
+        "word": "BLENDER",
+        "clue": "Kitchen appliance that mixes or purees food"
+      },
+      {
+        "word": "FORK",
+        "clue": "Utensil with prongs"
+      },
+      {
+        "word": "TOWEL",
+        "clue": "Used to dry yourself after a bath"
+      },
+      {
+        "word": "WINDOW",
+        "clue": "Lets light and air into a room"
+      },
+      {
+        "word": "DOORMAT",
+        "clue": "Wipe your shoes on this before entering"
+      },
+      {
+        "word": "PILLOW",
+        "clue": "Supports your head while sleeping"
+      },
+      {
+        "word": "CURTAIN",
+        "clue": "Covers the window for privacy"
+      },
+      {
+        "word": "SINK",
+        "clue": "Where you wash your hands or dishes"
+      },
+      {
+        "word": "EIFFELTOWER",
+        "clue": "Parisian iron structure completed in 1889"
+      },
+      {
+        "word": "GREATWALL",
+        "clue": "Massive ancient fortification in China"
+      },
+      {
+        "word": "PYRAMIDS",
+        "clue": "Ancient tombs of Egyptian pharaohs"
+      },
+      {
+        "word": "BIGBEN",
+        "clue": "Iconic London clock tower"
+      },
+      {
+        "word": "TAJMAHAL",
+        "clue": "White marble mausoleum in Agra, India"
+      },
+      {
+        "word": "STATUEOFLIBERTY",
+        "clue": "A gift from France to the U.S. standing in New York Harbor"
+      },
+      {
+        "word": "MACHUPICCHU",
+        "clue": "Incan citadel in the Andes Mountains"
+      },
+      {
+        "word": "COLLOSSEUM",
+        "clue": "Ancient Roman amphitheater"
+      },
+      {
+        "word": "SYDNEYOPERA",
+        "clue": "Famous performing arts venue with a sail-like design"
+      },
+      {
+        "word": "STONEHENGE",
+        "clue": "Prehistoric stone circle in England"
+      },
+      {
+        "word": "GOLDENGATE",
+        "clue": "Suspension bridge spanning San Francisco Bay"
+      },
+      {
+        "word": "CHRISTTHEREDEEMER",
+        "clue": "Massive statue overlooking Rio de Janeiro"
+      },
+      {
+        "word": "HAMLET",
+        "clue": "Shakespearean tragedy featuring a Danish prince"
+      },
+      {
+        "word": "ODYSSEY",
+        "clue": "Epic poem by Homer about a long journey home"
+      },
+      {
+        "word": "DRACULA",
+        "clue": "Classic vampire novel by Bram Stoker"
+      },
+      {
+        "word": "FRANKENSTEIN",
+        "clue": "Mary Shelley's novel about a scientist and his creation"
+      },
+      {
+        "word": "GATSBY",
+        "clue": "Famous novel by F. Scott Fitzgerald set in the Roaring Twenties"
+      },
+      {
+        "word": "1984",
+        "clue": "Dystopian novel by George Orwell"
+      },
+      {
+        "word": "MOCKINGBIRD",
+        "clue": "Harper Lee novel involving themes of race and justice"
+      },
+      {
+        "word": "HOBBIT",
+        "clue": "Fantasy novel by Tolkien that precedes the Lord of the Rings"
+      },
+      {
+        "word": "DUNE",
+        "clue": "Sci-fi novel set on the desert planet Arrakis"
+      },
+      {
+        "word": "ALCHEMIST",
+        "clue": "Paulo Coelho's novel about following your dreams"
+      },
+      {
+        "word": "JANEEYRE",
+        "clue": "Charlotte Brontë’s novel about an orphaned governess"
+      },
+      {
+        "word": "MOBYDICK",
+        "clue": "Novel featuring a vengeful captain and a white whale"
+      },
+      {
+        "word": "TWILIGHT",
+        "clue": "Vampire romance novel by Stephenie Meyer"
+      },
+      {
+        "word": "IT",
+        "clue": "Stephen King horror novel featuring a terrifying clown"
+      },
+      {
+        "word": "CORALINE",
+        "clue": "Neil Gaiman’s spooky children’s book involving a parallel world"
+      },
+      {
+        "word": "ZEUS",
+        "clue": "King of the gods in Greek mythology"
+      },
+      {
+        "word": "ODIN",
+        "clue": "Allfather god in Norse mythology"
+      },
+      {
+        "word": "THOR",
+        "clue": "Norse god of thunder"
+      },
+      {
+        "word": "RA",
+        "clue": "Egyptian sun god"
+      },
+      {
+        "word": "POSEIDON",
+        "clue": "Greek god of the sea"
+      },
+      {
+        "word": "HADES",
+        "clue": "Greek god of the underworld"
+      },
+      {
+        "word": "ANUBIS",
+        "clue": "Egyptian god of mummification"
+      },
+      {
+        "word": "FREYA",
+        "clue": "Norse goddess associated with love and war"
+      },
+      {
+        "word": "APHRODITE",
+        "clue": "Greek goddess of love and beauty"
+      },
+      {
+        "word": "ATHENA",
+        "clue": "Greek goddess of wisdom and warfare"
+      },
+      {
+        "word": "ARES",
+        "clue": "Greek god of war"
+      },
+      {
+        "word": "LOKI",
+        "clue": "Norse trickster god"
+      },
+      {
+        "word": "HERCULES",
+        "clue": "Greek hero known for his strength and twelve labors"
+      },
+      {
+        "word": "MEDUSA",
+        "clue": "Gorgon whose gaze could turn people to stone"
+      },
+      {
+        "word": "PEGASUS",
+        "clue": "Winged horse from Greek mythology"
+      },
+      {
+        "word": "TELEPHONE",
+        "clue": "Invented by Alexander Graham Bell to transmit voice over distance"
+      },
+      {
+        "word": "LIGHTBULB",
+        "clue": "Thomas Edison made it practical for home use"
+      },
+      {
+        "word": "PRINTINGPRESS",
+        "clue": "Gutenberg's 15th-century invention that revolutionized communication"
+      },
+      {
+        "word": "AEROPLANE",
+        "clue": "Wright brothers pioneered this mode of air travel"
+      },
+      {
+        "word": "TELEVISION",
+        "clue": "Box that changed how the world consumed media"
+      },
+      {
+        "word": "INTERNET",
+        "clue": "Global network that transformed communication and information sharing"
+      },
+      {
+        "word": "MICROSCOPE",
+        "clue": "Reveals the invisible world of cells and bacteria"
+      },
+      {
+        "word": "STEAMENGINE",
+        "clue": "Fueled the Industrial Revolution"
+      },
+      {
+        "word": "COMPUTER",
+        "clue": "Modern essential used for processing data and running applications"
+      },
+      {
+        "word": "WHEEL",
+        "clue": "Ancient invention that revolutionized transport"
+      },
+      {
+        "word": "SATELLITE",
+        "clue": "Orbits Earth and enables communication and GPS"
+      },
+      {
+        "word": "RADIO",
+        "clue": "Wireless communication developed by Marconi"
+      },
+      {
+        "word": "CAMERA",
+        "clue": "Captures still images and memories"
+      },
+      {
+        "word": "XEROGRAPHY",
+        "clue": "Technology behind modern photocopiers"
+      },
+      {
+        "word": "PACEMAKER",
+        "clue": "Medical device that regulates heartbeats"
+      },
+      {
+        "word": "SPONGEBOB",
+        "clue": "Lives in a pineapple under the sea"
+      },
+      {
+        "word": "BATMAN",
+        "clue": "Gotham's dark knight with a cape and gadgets"
+      },
+      {
+        "word": "BUGSBUNNY",
+        "clue": "Witty rabbit famous for saying 'What's up, Doc?'"
+      },
+      {
+        "word": "MICKEYMOUSE",
+        "clue": "Disney’s cheerful mascot with big ears"
+      },
+      {
+        "word": "SCOOBYDOO",
+        "clue": "Mystery-solving dog who loves snacks"
+      },
+      {
+        "word": "HOMERSIMPSON",
+        "clue": "Donut-loving dad from Springfield"
+      },
+      {
+        "word": "POPEYE",
+        "clue": "Sailor who gains strength from eating spinach"
+      },
+      {
+        "word": "TOM",
+        "clue": "Cat constantly chasing a clever mouse"
+      },
+      {
+        "word": "JERRY",
+        "clue": "Small mouse always outsmarting his feline rival"
+      },
+      {
+        "word": "DEXTER",
+        "clue": "Boy genius with a secret lab"
+      },
+      {
+        "word": "FRED",
+        "clue": "Leader of the Mystery Inc. gang with a love for ascots"
+      },
+      {
+        "word": "DORA",
+        "clue": "Explorer with a backpack and a monkey named Boots"
+      },
+      {
+        "word": "GARFIELD",
+        "clue": "Lazy orange cat who hates Mondays"
+      },
+      {
+        "word": "ELSA",
+        "clue": "Ice queen with magical powers from Arendelle"
+      },
+      {
+        "word": "SIMBA",
+        "clue": "Lion cub destined to be king"
+      },
+      {
+        "word": "HYDROGEN",
+        "clue": "Lightest and most abundant element in the universe"
+      },
+      {
+        "word": "OXYGEN",
+        "clue": "Essential for respiration and makes up 21% of Earth's atmosphere"
+      },
+      {
+        "word": "CARBON",
+        "clue": "Element found in all living organisms"
+      },
+      {
+        "word": "HELIUM",
+        "clue": "Second lightest element, used in balloons"
+      },
+      {
+        "word": "IRON",
+        "clue": "Metal essential for blood and found in the Earth's core"
+      },
+      {
+        "word": "GOLD",
+        "clue": "Precious yellow metal with the symbol Au"
+      },
+      {
+        "word": "SODIUM",
+        "clue": "Element with symbol Na, found in table salt"
+      },
+      {
+        "word": "CHLORINE",
+        "clue": "Greenish gas used to disinfect water"
+      },
+      {
+        "word": "NEON",
+        "clue": "Noble gas used in colorful signage"
+      },
+      {
+        "word": "URANIUM",
+        "clue": "Radioactive element used as nuclear fuel"
+      },
+      {
+        "word": "SILICON",
+        "clue": "Element essential in electronics and computer chips"
+      },
+      {
+        "word": "MERCURY",
+        "clue": "Only metal that is liquid at room temperature"
+      },
+      {
+        "word": "CALCIUM",
+        "clue": "Element crucial for healthy bones and teeth"
+      },
+      {
+        "word": "COPPER",
+        "clue": "Conductive metal used in wiring and coins"
+      },
+      {
+        "word": "ZINC",
+        "clue": "Element used to galvanize steel and boost immunity"
+      },
+      {
+        "word": "SPIDERMAN",
+        "clue": "Teen hero with spider-like abilities and a red-blue suit"
+      },
+      {
+        "word": "IRONMAN",
+        "clue": "Billionaire inventor in a high-tech armored suit"
+      },
+      {
+        "word": "THOR",
+        "clue": "Asgardian god who wields the hammer Mjolnir"
+      },
+      {
+        "word": "HULK",
+        "clue": "Green-skinned giant with limitless strength"
+      },
+      {
+        "word": "BLACKWIDOW",
+        "clue": "Deadly spy and Avenger with a mysterious past"
+      },
+      {
+        "word": "CAPTAINAMERICA",
+        "clue": "Super soldier with an indestructible shield"
+      },
+      {
+        "word": "WOLVERINE",
+        "clue": "X-Man with retractable claws and a healing factor"
+      },
+      {
+        "word": "STORM",
+        "clue": "Mutant who can control the weather"
+      },
+      {
+        "word": "DOCTORSTRANGE",
+        "clue": "Master of the mystic arts and Sorcerer Supreme"
+      },
+      {
+        "word": "BLACKPANTHER",
+        "clue": "King of Wakanda with enhanced strength and agility"
+      },
+      {
+        "word": "SCARLETWITCH",
+        "clue": "Avenger with reality-altering powers"
+      },
+      {
+        "word": "ANTMAN",
+        "clue": "Hero who can shrink in size and talk to ants"
+      },
+      {
+        "word": "HAWKEYE",
+        "clue": "Sharpshooting archer of the Avengers"
+      },
+      {
+        "word": "GROOT",
+        "clue": "Flora colossus with a limited vocabulary"
+      },
+      {
+        "word": "ROCKET",
+        "clue": "Smart, talking raccoon with a love for explosives"
+      },
+      {
+        "word": "BATMAN",
+        "clue": "Gotham's vigilante detective, also known as the Dark Knight"
+      },
+      {
+        "word": "SUPERMAN",
+        "clue": "Man of Steel from Krypton, protector of Metropolis"
+      },
+      {
+        "word": "WONDERWOMAN",
+        "clue": "Amazonian warrior princess with a Lasso of Truth"
+      },
+      {
+        "word": "FLASH",
+        "clue": "Fastest man alive with the power of the Speed Force"
+      },
+      {
+        "word": "AQUAMAN",
+        "clue": "King of Atlantis who can communicate with sea life"
+      },
+      {
+        "word": "GREENLANTERN",
+        "clue": "Wields a power ring fueled by willpower"
+      },
+      {
+        "word": "CYBORG",
+        "clue": "Half-human, half-machine with advanced tech weaponry"
+      },
+      {
+        "word": "ROBIN",
+        "clue": "Batman’s sidekick, known as the Boy Wonder"
+      },
+      {
+        "word": "SHAZAM",
+        "clue": "Teen who transforms into a superhero by saying a magic word"
+      },
+      {
+        "word": "NIGHTWING",
+        "clue": "Dick Grayson's identity after stepping out of Robin’s shadow"
+      },
+      {
+        "word": "ZATANNA",
+        "clue": "Powerful magician who casts spells by speaking backward"
+      },
+      {
+        "word": "GREENARROW",
+        "clue": "Vigilante archer with a knack for trick arrows"
+      },
+      {
+        "word": "RAVEN",
+        "clue": "Teen Titan with dark magical powers and empathy"
+      },
+      {
+        "word": "STARFIRE",
+        "clue": "Alien princess with energy blasts and flight"
+      },
+      {
+        "word": "BLUEBEETLE",
+        "clue": "Teen hero fused with alien tech armor"
+      },
+      {
+        "word": "PIANO",
+        "clue": "Keyboard instrument with 88 keys"
+      },
+      {
+        "word": "VIOLIN",
+        "clue": "Small string instrument played with a bow"
+      },
+      {
+        "word": "GUITAR",
+        "clue": "Popular six-string instrument, both acoustic and electric"
+      },
+      {
+        "word": "TRUMPET",
+        "clue": "Brass instrument with three valves and a bright sound"
+      },
+      {
+        "word": "FLUTE",
+        "clue": "Woodwind instrument you blow across to play"
+      },
+      {
+        "word": "DRUMS",
+        "clue": "Percussion instrument played by striking with sticks"
+      },
+      {
+        "word": "CELLO",
+        "clue": "Large string instrument, deeper than a violin"
+      },
+      {
+        "word": "TROMBONE",
+        "clue": "Brass instrument with a slide instead of valves"
+      },
+      {
+        "word": "HARP",
+        "clue": "Large stringed instrument often played in orchestras"
+      },
+      {
+        "word": "SAXOPHONE",
+        "clue": "Reed instrument often heard in jazz music"
+      },
+      {
+        "word": "BASSOON",
+        "clue": "Long, low-pitched woodwind instrument"
+      },
+      {
+        "word": "OBOE",
+        "clue": "Double-reed woodwind known for its nasal tone"
+      },
+      {
+        "word": "CLARINET",
+        "clue": "Woodwind with a single reed, common in orchestras"
+      },
+      {
+        "word": "UKULELE",
+        "clue": "Small Hawaiian guitar with four strings"
+      },
+      {
+        "word": "XYLOPHONE",
+        "clue": "Percussion instrument with wooden bars played with mallets"
+      }
+    ]
+  }
